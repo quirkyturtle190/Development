@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Charizard",
+    "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "pokedex": 6,
+    "height": 1.7,
+    "weight": 90.5,
+    "base": 534,
+    "image": "images/charizard.png"
+  },
+  {
+    "name": "Blastoise",
+    "pokedex": 9,
+    "description": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
+    "height": 1.6,
+    "weight": 85.5,
+    "base": 530,
+    "image": "images/blastoise.png"
+  },
+  {
+    "name": "Gengar",
+    "pokedex": 94,
+    "description": "To steal the life of its target, it slips into the prey’s shadow and silently waits for an opportunity.",
+    "height": 1.5,
+    "weight": 40.5,
+    "base": 500,
+    "image": "images/gengar.png"
+  },
+  {
+    "name": "Gardevoir",
+    "pokedex": 282,
+    "description": "It unleashes psychokinetic energy at full power when protecting a Trainer it has bonded closely with.",
+    "height": 1.6,
+    "weight": 48.4,
+    "base": 518,
+    "image": "images/gardevoir.png"
+  },
+  {
+    "name": "Garchomp",
+    "pokedex": 445,
+    "description": "When it folds up its body and extends its wings, it looks like a jet plane. It flies at sonic speed.",
+    "height": 1.9,
+    "weight": 95.0,
+    "base": 600,
+    "image": "images/garchomp.png"
+  },
+  {
+    "name": "Sylveon",
+    "pokedex": 700,
+    "description": "It wraps its ribbonlike feelers around the arm of its beloved Trainer and walks with him or her.",
+    "height": 1.0,
+    "weight": 23.5,
+    "base": 525,
+    "image": "images/sylveon.png"
+  },
+  {
+    "name": "Greninja",
+    "pokedex": 658,
+    "description": "It unleashes psychokinetic energy at full power when protecting a Trainer it has bonded closely with.",
+    "height": 1.5,
+    "weight": 40.0,
+    "base": 530,
+    "image": "images/greninja.png"
+  },
+  {
+    "name": "Pikachu",
+    "pokedex": 25,
+    "description": "It keeps its tail raised to monitor its surroundings. If you yank its tail, it will try to bite you.",
+    "height": 0.4,
+    "weight": 6.0,
+    "base": 320,
+    "image": "images/pikachu.png"
+  },
+  {
+    "name": "Mimikyu",
+    "pokedex": 778,
+    "description": "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck.",
+    "height": 0.2,
+    "weight": 0.7,
+    "base": 476,
+    "image": "images/mimikyu.png"
+  },
+  {
+    "name": "Lucario",
+    "pokedex": 448,
+    "description": "It has the ability to sense the auras of all things. It understands human speech.",
+    "height": 1.2,
+    "weight": 54.0,
+    "base": 525,
+    "image": "images/lucario.png"
+  },
+  {
+    "name": "Dragapult",
+    "pokedex": 887,
+    "description": "Apparently the Dreepy inside Dragapult’s horns eagerly look forward to being launched out at Mach speeds.",
+    "height": 3.0,
+    "weight": 50.0,
+    "base": 600,
+    "image": "images/dragapult.png"
+  },
+  {
+    "name": "Toxtricity",
+    "pokedex": 849,
+    "description": "This short-tempered and aggressive Pokémon chugs stagnant water to absorb any toxins it might contain.",
+    "height": 1.6,
+    "weight": 40.0,
+    "base": 502,
+    "image": "images/toxtricity.png"
+  }
+]
