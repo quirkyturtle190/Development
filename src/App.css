@@ -5,7 +5,7 @@
   justify-content: flex-start;
 }
 .content {
-  width: 75%
+  width: 70%
 }
 .flex-row {
   display: flex;
@@ -28,7 +28,7 @@
 
 .cart {
   position: fixed;
-  left: 70%;
+  left: 62%;
 }
 #header{
   justify-content: space-between;
