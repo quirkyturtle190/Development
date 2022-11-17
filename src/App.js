@@ -43,21 +43,25 @@ function App() {
       console.log(temp)
   }
 
+  function filterPokemon(pokemon){
+      let bool = (pokemon.base >= minBase && pokemon.weight >= minWeight && pokemon.height >= minHeight)
+      console.log(bool)
+      return bool
+  }
+
   function filterByBase(value){
       setMinBase(value)
-      setPokemonData(data.filter((pokemon) => (pokemon.base >= value)));
-      console.log(value)
+      setPokemonData(data.filter((pokemon) => filterPokemon(pokemon)));
+      console.log()
   }
 
   function filterByWeight(value){
       setMinWeight(value)
-      setPokemonData(data.filter((pokemon) => (pokemon.weight >= value)));
-      console.log(value)
+      setPokemonData(data.filter((pokemon) => filterPokemon(pokemon)));
   }
   function filterByHeight(value){
       setMinHeight(value)
-      setPokemonData(data.filter((pokemon) => (pokemon.height >= value)));
-      console.log(value)
+      setPokemonData(data.filter((pokemon) => filterPokemon(pokemon)));
   }
 
   return (
