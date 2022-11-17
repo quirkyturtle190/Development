@@ -3,7 +3,6 @@ import { useState } from "react";
 import data from "./assets/pokemon-data.json";
 import PokemonCard from "./components/PokemonCard";
 import PokemonList from "./components/PokemonList";
-import CartItem from "./components/CartItem";
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 data.forEach((item) => {
@@ -18,7 +17,10 @@ function App() {
   /* add your cart state code here */
   const [teamArr, setTeamArr] = useState([]);
   const [pokemonData, setPokemonData] = useState(data);
-  const [baseCount, setBaseCount] = useState(0)
+  const [baseCount, setBaseCount] = useState(0);
+  const [minBase, setMinBase] = useState(300);
+  const [minWeight, setMinWeight] = useState(0);
+  const [minHeight, setMinHeight] = useState(0);
 
   function sortByName() {
       let temp = [...pokemonData]
@@ -41,11 +43,50 @@ function App() {
       console.log(temp)
   }
 
+  function filterByBase(value){
+      setMinBase(value)
+      setPokemonData(data.filter((pokemon) => (pokemon.base >= value)));
+      console.log(value)
+  }
+
+  function filterByWeight(value){
+      setMinWeight(value)
+      setPokemonData(data.filter((pokemon) => (pokemon.weight >= value)));
+      console.log(value)
+  }
+  function filterByHeight(value){
+      setMinHeight(value)
+      setPokemonData(data.filter((pokemon) => (pokemon.height >= value)));
+      console.log(value)
+  }
+
   return (
       <div className="App">
           <div className="content">
               <div className="flex-row" id="header">
                   <h1>Build Your Favorite Pokemon Team</h1>
+                  <div className="dropdown">
+                      <button className="dropbtn">Filter</button>
+                      <div className="dropdown-content">
+                          <form className="filter">
+                              <div>
+                                  <label className="form-label">Min Base Stats: </label>
+                                  <span>{minBase}</span>
+                                  <input className="slider" type="range" min="300" max="600" step="5" onChange={e => filterByBase(e.target.value)}/>
+                              </div>
+                              <div>
+                                  <label className="form-label">Min Weight: </label>
+                                  <span>{minWeight} kg</span>
+                                  <input className="slider" type="range" min="0" max="100" step="1" defaultValue="0" onChange={e => filterByWeight(e.target.value)}/>
+                              </div>
+                              <div>
+                                  <label className="form-label">Min Height: </label>
+                                  <span>{minHeight} m</span>
+                                  <input className="slider" type="range" min="0" max="3" step="0.1" defaultValue="0" onChange={e => filterByHeight(e.target.value)}/>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
                   <div className="dropdown">
                       <button className="dropbtn">Sort</button>
                       <div className="dropdown-content">

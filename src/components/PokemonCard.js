@@ -8,7 +8,7 @@ export default function PokemonCard(props){
     }
     return (
     <div class="items">
-        <img src={props.info.image}/>
+        <img src={props.info.image} alt={props.info.name}/>
         <h1>{props.info.name}</h1>
         <p>{props.info.description}</p>
         <p>Pokedex #{props.info.pokedex}</p>
