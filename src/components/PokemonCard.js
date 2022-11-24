@@ -15,7 +15,7 @@ export default function PokemonCard(props){
         <p>Height: {props.info.height}m</p>
         <p>Weight: {props.info.weight}kg</p>
         <p>Base Stats Total: {props.info.base}</p>
-        <button onClick={() => addToTeam()} > Add to Team!</button>
+        <button className="pokemon-button" onClick={() => addToTeam()} > Add to Team!</button>
     </div>
     );
 }
