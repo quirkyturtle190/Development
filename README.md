@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+https://quirkyturtle190.github.io/Development
 
 ### Goal and Value of the Application
 The goal of the application is to be able to create a team of Pokemon based on your preferences. Currently, there are 
@@ -21,7 +21,7 @@ pokemon and their weight, height, pokedex number, and base stats. Whereas the ca
 which in this case is base stats
 
 ### How Data is Passed Down Through Components
-Data is passed down through components by utilizing props which are passed into the Components
+Data is passed down through components by utilizing props which are passed into the Components within the main app.
 
 
 ### How the User Triggers State Changes
